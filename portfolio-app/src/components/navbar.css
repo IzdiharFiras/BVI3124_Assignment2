@@ -1,0 +1,51 @@
+.header {
+  background-color: #d32f2f;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li {
+  display: inline-block;
+}
+
+.nav-menu button {
+  background-color: white;
+  color: #d32f2f;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease;
+}
+
+/* ✅ Lift effect like skill-card */
+.nav-menu button:hover {
+  background-color: #f5f5f5;
+  transform: translateY(-4px); /* lift up */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* stronger shadow */
+}
